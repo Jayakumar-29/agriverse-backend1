@@ -10,7 +10,7 @@ from pydantic import BaseModel
 from typing import Dict
 
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_DIR = BASE_DIR / "models"
+MODEL_DIR = BASE_DIR
 
 with open(BASE_DIR / "feature_columns.json") as f:
     FEATURE_COLUMNS = json.load(f)
